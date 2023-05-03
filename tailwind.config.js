@@ -10,7 +10,6 @@ module.exports = {
         cardHover: "#042234",
       },
       fontFamily: {
-        Roboto: ["Roboto", "sans-serif"],
         Opensans: ["Open Sans", "sans-serif"],
         Poppins: ["Poppins", "sans-serif"],
       },

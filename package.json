@@ -1,12 +1,12 @@
 {
-  "name": "portfolio",
+  "name": "Folio - Minimalist Developer Portfolio",
   "version": "1.0.0",
-  "description": "this is my front-end developer portfolio",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "vite",
-    "build": "vite build"
+    "build:css": "tailwind build src/style.css -o assets/css/tailwind.css"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {

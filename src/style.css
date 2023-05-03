@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=swap");
 
 /* side navbar of responsive menu*/
 .sidebar {
@@ -285,7 +285,7 @@
 
 /* contact section and social links */
 .social-link {
-  @apply text-2xl p-5 mx-[2px] text-button rounded-full bg-cardHover transition-all duration-300 mb-5;
+  @apply text-2xl px-5 py-4 mx-[2px] text-button rounded-full bg-cardHover transition-all duration-300 mb-5;
 }
 
 .contact-input {
