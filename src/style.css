@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap");
+
+/* side navbar of responsive menu*/
+.sidebar {
+  top: 0;
+  right: -100%;
+  transition: 0.2s all ease;
+  @apply font-sans w-4/5 h-screen z-30 space-y-6 text-xl fixed flex flex-col items-center text-center;
+}
+
+.side-button {
+  @apply w-2/3 py-2 rounded-full mx-3 transition-all duration-200 font-medium;
+}
+
+.nav-button {
+  @apply px-8 py-2 rounded-full mx-1 transition-all duration-200 font-medium cursor-pointer;
+}
+
+.anav-button {
+  @apply px-8 py-2 rounded-lg mx-1 transition-all duration-300 font-medium capitalize;
+}
+
+.anav-button:hover {
+  @apply bg-green-400 text-background;
+}
+
+.r0 {
+  right: 0;
+}
+
+/* hamburger bar for responsive menu*/
+.hamburger {
+  @apply transition-all duration-200 fixed w-12 right-10 top-10 h-8 z-40 flex justify-between flex-col cursor-pointer;
+}
+
+.hamburger-bar {
+  @apply w-full h-[2px] bg-white rounded-full;
+}
+
+.bar-up {
+  transform: rotate(225deg) translateY(-10px);
+  @apply transition-all duration-500;
+}
+
+.bar-down {
+  transform: rotate(135deg) translateY(10px);
+  @apply transition-all duration-500;
+}
+
+.op0 {
+  opacity: 0;
+}
+
+/* navbar */
+.navbar {
+  @apply mx-auto h-36 justify-between items-center flex absolute top-0 right-1/2 translate-x-1/2 z-50;
+}
+
+.navbar-logo {
+  @apply font-sans text-4xl cursor-pointer font-extrabold w-[100px];
+}
+
+/* Hero section */
+.hero-container {
+  @apply flex flex-col mx-auto items-center justify-between h-screen;
+}
+
+.hero-button {
+  @apply mt-6 px-8 rounded-full font-medium py-3 bg-green-500 transition-all duration-200;
+}
+
+.hero-icons {
+  @apply mt-6 px-4 py-4 text-xl transition-all duration-150 rounded-full border-2 cursor-pointer border-white;
+}
+
+/* floating navbar */
+.nav-down {
+  @apply top-10;
+}
+
+.nav-up {
+  @apply -top-20;
+}
+
+/* about section */
+
+#about {
+  @apply w-full;
+}
+
+.service-heading {
+  @apply text-xl text-button font-Opensans font-bold text-center h-16;
+}
+
+.about-container {
+  @apply flex flex-col items-center justify-center max-w-full mx-auto;
+}
+
+.about-header {
+  @apply text-2xl font-medium font-Opensans leading-10;
+}
+
+.about-text {
+  @apply font-normal leading-8;
+}
+
+.about-button {
+  @apply w-56 rounded-full cv-button overflow-hidden relative font-Opensans h-16 text-lg;
+}
+
+.about-button i {
+  @apply absolute right-0 px-5 py-5 bottom-1/2 rounded-full bg-button;
+}
+
+.download-button {
+  @apply relative mr-8 text-xl font-semibold transition-all;
+}
+
+.card-container {
+  @apply flex flex-col mx-auto mt-[8rem] justify-center space-x-0 items-center space-y-10;
+}
+
+.about-card {
+  @apply rounded-2xl transition-colors duration-300;
+}
+
+.about-card:hover {
+  @apply bg-cardHover;
+}
+
+.about-card h1 {
+  @apply text-green-400 font-bold mb-4;
+}
+
+.about-card p {
+  @apply font-medium;
+}
+
+/* services section */
+.service-container {
+  @apply flex justify-around flex-col flex-wrap max-w-full mx-auto items-center my-24;
+}
+
+.service-div {
+  @apply bg-card transition-[background-color] duration-200 mt-16 h-fit rounded-lg w-11/12 py-10 box-content;
+}
+
+.service-text {
+  @apply font-normal opacity-70 text-center text-lg mt-6;
+}
+
+.cv-button:hover .slide {
+  right: 0;
+  transition: all 0.5s ease;
+}
+
+.fa-download {
+  transform: translateY(50%);
+}
+
+.cv-button:hover a,
+.cv-button:hover i {
+  color: #031728;
+  transition: all 0.4s;
+}
+
+/* skills section */
+.skills-container {
+  @apply grid mx-auto grid-cols-1 gap-8 text-center;
+}
+
+.skills-container div {
+  @apply pt-12 pb-8 bg-card rounded-xl transition-all duration-300;
+}
+
+.skills-container div:hover {
+  @apply bg-cardHover;
+}
+
+.skills-container div img {
+  @apply mx-auto w-[150px] h-[150px] min-w-[150px] min-h-[150px];
+}
+
+.skills-container div p {
+  @apply font-Poppins text-xl font-semibold mt-6;
+}
+
+/* experience section */
+.experience-container {
+  @apply relative bg-button rounded-full w-[3px] h-full;
+}
+
+.experience-div {
+  @apply bg-cardHover absolute px-4 py-8 w-[95vw];
+}
+
+.experience-div:hover .experience-design {
+  @apply w-[95%] bg-button;
+}
+
+.experience-heading {
+  @apply flex items-center justify-between mb-5 text-green-500 font-Poppins font-semibold transition-all duration-300 text-xl;
+}
+
+.experience-para {
+  @apply text-[15px] font-Opensans font-medium transition-all duration-300;
+}
+
+.experience-design {
+  @apply h-[2px] absolute bottom-0 bg-green-500 left-0 transition-all duration-300;
+}
+
+/* portfolio section */
+
+.portfolio-container {
+  @apply mx-auto max-w-full space-y-24 my-44 w-4/5;
+}
+
+.portfolio-div {
+  @apply flex flex-col bg-card rounded-2xl px-6 py-10;
+}
+
+.project-div-heading {
+  @apply font-semibold text-button mb-6 h-fit font-Poppins text-2xl;
+}
+
+.portfolio-img-container {
+  @apply mb-20 rounded-lg overflow-hidden w-full flex items-center;
+}
+
+.portfolio-img {
+  @apply w-full duration-200 rounded-lg transition-all;
+}
+
+.portfolio-button {
+  @apply rounded-full px-6 py-2 transition-all duration-200 border-2 bg-button font-Opensans text-base border-button font-bold text-card cursor-pointer w-fit;
+}
+
+.portfolio-button:hover {
+  @apply bg-card text-white;
+}
+
+.section-heading {
+  @apply text-4xl font-Poppins font-semibold uppercase bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 text-transparent mb-24;
+}
+
+/* testimonial */
+.testimonial-card {
+  @apply mx-auto text-center flex flex-col justify-center items-center p-8 rounded-2xl bg-card my-40;
+}
+
+.testimonial-card img {
+  @apply w-[150px] -mt-24 rounded-full;
+}
+
+.testimonial-card p {
+  @apply w-4/5 mx-auto my-10 font-Poppins text-lg;
+}
+
+.arrows i {
+  @apply text-4xl p-6 bg-card rounded-full cursor-pointer;
+}
+
+/* blog section */
+
+.blog-container {
+  @apply flex flex-col items-center justify-between mt-52 w-11/12 mx-auto my-44 space-y-16;
+}
+
+.blog-div {
+  @apply w-4/5 h-fit bg-card rounded-2xl pb-6;
+}
+
+.blog-heading {
+  @apply text-button font-Poppins text-lg font-bold mb-8;
+}
+
+.blog-button {
+  @apply px-6 border-2 transition-all duration-300 border-green-500 py-3 text-lg font-semibold rounded-lg bg-green-500;
+}
+
+.blog-button:hover {
+  @apply bg-card;
+}
+
+/* contact section and social links */
+.social-link {
+  @apply text-2xl p-5 mx-[2px] text-button rounded-full bg-cardHover transition-all duration-300 mb-5;
+}
+
+.contact-input {
+  @apply px-4 py-3 outline-none border border-background rounded-lg w-full bg-background text-white font-medium font-Opensans text-lg;
+}
+
+.contact-input:focus {
+  @apply border-green-400;
+}
+
+.contact-button {
+  @apply w-1/3 py-3 text-lg font-Poppins text-background font-semibold bg-button transition-all duration-200 rounded-xl border;
+}
+
+.contact-button:hover {
+  transform: translateY(-6px);
+}
+
+/* animation */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

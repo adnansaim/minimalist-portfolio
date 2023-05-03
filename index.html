@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/imgs/favicon.png" type="image/png" />
+
+    <!--====== Website Title ======-->
+    <title>Folio-Portfolio Website</title>
+
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+
+    <!--====== Animation ======-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!--====== Swiper ======-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!--====== Main Css ======-->
+    <link rel="stylesheet" href="/assets/css/tailwind.css" />
+  </head>
+
+  <body class="bg-background text-white">
+    <!-- side navbar start -->
+    <div class="sidebar bg-[rgba(0,0,0,.8)] mdl:hidden">
+      <a
+        href="#"
+        class="side-button mt-32 hover:bg-button hover:text-background"
+        >Home</a
+      >
+      <a
+        href="#about"
+        class="side-button mt-32 hover:bg-button hover:text-background"
+        >About</a
+      >
+      <a
+        href="#skills"
+        class="side-button hover:bg-button hover:text-background"
+        >Skills</a
+      >
+      <a
+        href="#experience"
+        class="side-button hover:bg-button hover:text-background"
+        >Experience</a
+      >
+      <a
+        href="#testimonial"
+        class="side-button hover:bg-button hover:text-background"
+        >Testimonials</a
+      >
+      <a
+        class="side-button hover:bg-button hover:text-background"
+        href="#portfolio"
+        >portfolio</a
+      >
+
+      <a
+        href=""
+        class="side-button bg-gradient-to-r from-green-400 to-blue-500 hover:opacity-50 hover:text-background"
+        >Resume</a
+      >
+    </div>
+    <!-- side navbar end -->
+
+    <!-- Hamburger menu start -->
+    <div class="hamburger mdl:hidden">
+      <div class="hamburger-bar"></div>
+      <div class="hamburger-bar"></div>
+      <div class="hamburger-bar w-1/2"></div>
+    </div>
+    <!-- Hamburger menu end -->
+
+    <!-- main navbar start-->
+    <nav
+      class="max-w-full w-4/5 mdl:w-[60rem] xl:w-[70rem] 2xl:w-[92rem] navbar animate__animated animate__fadeIn"
+    >
+      <div class="navbar-logo" onclick="window.location.href='#'">
+        <img
+          src="/assets/imgs/Folio-logo.png"
+          alt=""
+          onclick="window.location.href='#'"
+        />
+      </div>
+
+      <div class="font-sans text-xl hidden cursor-default mdl:block">
+        <button
+          onclick="window.location.href='#about';"
+          class="nav-button hover:-translate-y-[5px] hover:bg-button hover:text-background"
+        >
+          About
+        </button>
+        <button
+          onclick="window.location.href='#skills'"
+          class="nav-button hover:-translate-y-[5px] hover:bg-button hover:text-background"
+        >
+          Skills
+        </button>
+        <button
+          class="nav-button hover:-translate-y-[5px] hover:bg-button hover:text-background"
+          onclick="window.location.href='#portfolio'"
+        >
+          Portfolio
+        </button>
+        <button
+          onclick="window.location.href='#experience'"
+          class="nav-button hover:-translate-y-[5px] hover:bg-button hover:text-background"
+        >
+          Experience
+        </button>
+
+        <a
+          href=""
+          class="nav-button bg-gradient-to-r from-green-400 to-blue-500 hover:opacity-50 hover:text-background"
+          >Resume</a
+        >
+      </div>
+    </nav>
+    <!-- main navbar end -->
+
+    <!-- floating navbar start -->
+    <nav
+      style="transform: translate(-50%)"
+      class="animated-nav hidden mdl:flex fixed inset-x-1/2 uppercase nav-down nav-up z-50 transition-all duration-300 bg-[rgba(0,0,0,.8)] px-16 rounded-full items-center text-white w-fit text-lg h-[72px]"
+    >
+      <a class="anav-button" href="#">Home</a>
+      <a class="anav-button" href="#about">About</a>
+      <a class="anav-button" href="#skills">Skills</a>
+      <!-- <a class="anav-button" href="#blog">Blog</a> -->
+
+      <a class="anav-button" href="#experience">Experience</a>
+
+      <a class="anav-button" href="#portfolio">Portfolio</a>
+      <a
+        href=""
+        class="anav-button hover:-translate-y-0 bg-gradient-to-r from-green-400 to-blue-500 capitalize hover:opacity-50 hover:text-background"
+        >Resume</a
+      >
+    </nav>
+    <!-- floating navbar end -->
+
+    <!-- hero section start -->
+    <section class="hero w-full h-fit relative min-h-fit" id="home">
+      <!-- hero icons start -->
+      <div class="hidden mdl:block">
+        <div class="w-28 h-28 absolute left-5">
+          <img
+            src="/assets/imgs/Hero/circle.svg"
+            class="absolute circle w-12"
+            alt=""
+          />
+        </div>
+        <div class="w-32 h-40 absolute top-20 right-20">
+          <img
+            src="/assets/imgs/Hero/cross.svg"
+            class="absolute cross w-10 overflow-hidden"
+            alt=""
+          />
+        </div>
+        <div class="w-24 h-32 absolute bottom-16 left-40">
+          <img
+            src="/assets/imgs/Hero/thunder.svg"
+            class="absolute transition-all duration-150 thunder w-10 overflow-hidden"
+            alt=""
+          />
+        </div>
+        <div class="w-24 h-32 absolute bottom-24 right-[45%]">
+          <img
+            src="/assets/imgs/Hero/block.svg"
+            class="absolute chain w-10 overflow-hidden"
+            alt=""
+          />
+        </div>
+        <div class="w-24 h-32 absolute top-24 right-[45%]">
+          <img
+            src="/assets/imgs/Hero/multiple_layers.svg"
+            class="absolute layer transition-all duration-75 w-10 overflow-hidden"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- hero icons end-->
+
+      <div
+        class="hero-container h-fit max-w-full mdl:w-[58rem] xl:w-[70rem] 2xl:w-[92rem] mdl:flex-row mdl:py-32 mt-32"
+      >
+        <div
+          class="max-w-full w-11/12 xsm:w-4/5 sm:w-[35rem] xsm:flex-2 mdl:w-fit font-sans my-16 space-y-5 hero-text animate__animated animate__fadeInUp"
+        >
+          <p class="text-2xl sm:text-4xl mdl:text-3xl 2xl:text-4xl">
+            Hi there!
+          </p>
+          <h1
+            class="font-Poppins font-semibold text-4xl sm:text-6xl mdl:text-5xl xl:text-6xl 2xl:text-7xl text-white"
+          >
+            I'm Eric Johnson
+          </h1>
+          <h2 class="text-white text-2xl sm:text-4xl mdl:text-3xl 2xl:text-4xl">
+            I am a <span class="auto-text text-button"></span>
+          </h2>
+          <div class="font-Poppins text-2xl">
+            <button
+              class="hero-button hover:bg-green-400 hover:-translate-y-2 text-lg sm:text-2xl mdl:text-xl 2xl:text-2xl mr-1 sm:mr-8 mdl:px-10 mdl:py-4"
+              id="contact-button"
+            >
+              Contact me
+            </button>
+            <a
+              ><button
+                class="hero-button hover:bg-green-400 hover:-translate-y-2 text-lg sm:text-2xl mdl:text-xl 2xl:text-2xl mr-0 sm:mr-8 mdl:px-10 mdl:py-4"
+                id="contact-button"
+              >
+                Hire me
+              </button></a
+            >
+          </div>
+          <div class="space-x-8">
+            <a href="">
+              <i
+                class="lni lni-twitter-original hero-icons hover:border-[#1c9cea] hover:-translate-y-[6px] hover:bg-[#1C9CEA] xsm:text-2xl 2xl:text-[30px]"
+              ></i>
+            </a>
+            <a href="">
+              <i
+                class="lni lni-linkedin-original hero-icons hover:border-[#0072b1] hover:-translate-y-[6px] hover:bg-[#0072b1] xsm:text-2xl 2xl:text-[30px]"
+              ></i>
+            </a>
+            <a href="">
+              <i
+                class="lni lni-github-original hero-icons hover:border-[#171515] hover:-translate-y-1 hover:bg-[#171515] xsm:text-2xl 2xl:text-[30px]"
+              ></i>
+            </a>
+            <!-- <a href="">
+              <i
+                class="lni lni-facebook-original hero-icons hover:border-[#1c9cea] hover:-translate-y-[6px] hover:bg-[#1C9CEA] xsm:text-2xl 2xl:text-[30px]"
+              ></i>
+            </a> -->
+          </div>
+        </div>
+        <div
+          class="w-full sm:w-fit xsm:flex-2 hero-img animate__animated animate__fadeInUp"
+        >
+          <img
+            src="/assets/imgs/Hero/Web Developer_Monochromatic.svg"
+            class="w-full sm:w-[600px] mx-auto sm:mt-10 mdl:mt-0 mdl:w-[490px] xl:w-[600px] max-w-[600px] transition-[transform] duration-[3s] translate-y-6 transform animatehero"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!-- hero section end -->
+
+    <!-- Contact button div -->
+    <section
+      id="contactdiv"
+      class="h-screen z-50 flex items-center justify-center fixed top-0 w-0 opacity-0"
+    >
+      <div
+        id="contact_blur-div"
+        class="w-full h-full bg-[rgb(0,0,0,.5)] blur-3xl absolute top-0 right-0"
+      ></div>
+
+      <form
+        class="bg-cardHover px-6 py-12 rounded-2xl w-[400px] h-[450px] space-y-4 relative transition-all duration-300"
+      >
+        <span
+          ><i
+            class="fa-solid fa-xmark absolute right-5 text-2xl top-5 cursor-pointer transition-all duration-200 hover:text-[rgb(255,255,255,.8)]"
+            id="contact-close"
+          ></i
+        ></span>
+        <input type="text" class="contact-input" placeholder="Name" />
+        <input type="email" class="contact-input" placeholder="Email" />
+        <textarea
+          class="contact-input h-[150px]"
+          placeholder="Message"
+        ></textarea>
+        <div class="flex justify-center">
+          <button
+            class="contact-button bg-button border-button hover:bg-inherit hover:text-white"
+            type="submit"
+          >
+            Send
+          </button>
+        </div>
+        <input type="hidden" name="_captcha" value="false" />
+      </form>
+    </section>
+    <!-- Contact button div end -->
+
+    <!-- About section start -->
+    <section class="mt-[10rem] mdl:pt-32 mdl:pb-32 min-h-fit" id="about">
+      <h1 class="block mdl:hidden section-heading mb-20 text-center">
+        About me
+      </h1>
+      <div
+        class="about-container mdl:flex-row mdl:items-centermdl:w-[65rem] xl:w-[80rem] 2xl:w-[92rem]"
+      >
+        <div class="w-full mdl:w-fit mdl:mx-10 xl:w-2/4 animate-up">
+          <img
+            src="assets/imgs/profiles/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg"
+            class="w-11/12 xsm:w-[320px] sm:w-[445px] mdl:w-[350px] 2xl:w-[445px] rounded-2xl mx-auto"
+            alt=""
+          />
+        </div>
+        <div
+          class="space-y-10 font-Opensans text-center sm:w-[30rem] mdl:text-left w-11/12 xsm:w-[24rem] mdl:w-1/2 xl:w-2/5 animate-up"
+        >
+          <h1 class="section-heading mb-16 mdl:block hidden sm:text-5xl">
+            ABOUT ME
+          </h1>
+          <h2 class="about-header mdl:text-[27px] 2xl:text-3xl">
+            I am a
+            <span class="text-button"
+              >Freelance Fullstack Developer <span class="text-white">&</span>
+              <br class="mdl:hidden xl:block" />
+              Web Designer</span
+            >
+          </h2>
+          <p class="text-lg mdl:text-base 2xl:text-lg about-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim
+            laborum voluptatem vero non dolores neque voluptatibus nam!
+            Obcaecati, laudantium. Reiciendis numquam eius exercitationem nobis
+            quos optio, ut deleniti est.
+          </p>
+          <p class="text-lg mdl:text-base 2xl:text-lg about-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            ratione facere unde fugit dolorem dignissimos eos sequi quaerat!
+            Quidem ullam adipisci laborum vel voluptates officiis tempore quos
+            beatae distinctio aperiam!
+          </p>
+          <button
+            class="focus:ring-2 ring-button border border-button about-button"
+          >
+            <div
+              class="bottom-0 slide transition-right duration-500 -right-full w-full h-full bg-button absolute"
+            ></div>
+            <a download class="download-button">Download CV</a>
+            <i class="fa-solid fa-download"></i>
+          </button>
+        </div>
+      </div>
+      <div
+        class="animate-up card-container sm:flex-row xl:w-[70rem] 2xl:w-[92rem] sm:space-y-0 sm:space-x-2 h-fit md:space-x-4 mdl:space-x-16 2xl:space-x-32 -up"
+      >
+        <div
+          class="bg-card about-card min-w-[260px] sm:min-w-[200px] md:min-w-[230px] xl:min-w-[260px] px-8 py-6 xl:px-12 xl:py-8"
+        >
+          <h1 class="md:text-3xl xl:text-4xl text-2xl" value="0">15k+</h1>
+          <p class="md:text-lg text-base">Projects completed</p>
+        </div>
+        <div
+          class="bg-card about-card min-w-[260px] sm:min-w-[200px] md:min-w-[230px] xl:min-w-[260px] px-8 py-6 xl:px-12 xl:py-8"
+        >
+          <h1 class="md:text-3xl xl:text-4xl text-2xl" value="0">950+</h1>
+          <p class="md:text-lg text-base">Happy Clients</p>
+        </div>
+        <div
+          class="bg-card about-card min-w-[260px] sm:min-w-[200px] md:min-w-[230px] xl:min-w-[260px] px-8 py-6 xl:px-12 xl:py-8"
+        >
+          <h1 class="md:text-3xl xl:text-4xl text-2xl" value="0">8+</h1>
+          <p class="md:text-lg text-base">Years Experience</p>
+        </div>
+      </div>
+    </section>
+    <!-- about section end -->
+
+    <!-- services section start -->
+    <section class="w-full py-32" id="offerings">
+      <h1 class="section-heading text-center sm:text-5xl animate-up">
+        What I Do
+      </h1>
+      <div
+        class="service-container 2xl:justify-between mdl:flex-row mdl:w-[60rem] xl:w-[70rem] 2xl:w-[92rem]"
+      >
+        <div
+          class="service-div sm:w-[35rem] mdl:w-[400px] hover:bg-cardHover mdl:py-4 xsm:w-4/5 sm:h-[550px] animate-left"
+        >
+          <img
+            src="/assets/imgs/services/Landing Page_Outline.svg"
+            class="w-[250px] mx-auto"
+            alt=""
+          />
+          <div class="px-8 pb-8">
+            <h1 class="service-heading sm:text-2xl">
+              Responsive Landing Page design
+            </h1>
+            <p class="service-text lg:mt-10 xl:mt-4">
+              I offer custom responsive landing page design that meets the
+              unique needs of your business. I understand that having a website
+              that looks great on any device is crucial for success, and I
+              strive to create landing pages that are both visually stunning and
+              functional.
+            </p>
+          </div>
+        </div>
+        <div
+          class="service-div xsm:w-4/5 mdl:py-4 mdl:w-[400px] hover:bg-cardHover sm:w-[35rem] sm:h-[550px] animate-left"
+        >
+          <img
+            src="/assets/imgs/services/Web development _Outline.svg"
+            class="w-[250px] mx-auto"
+            alt=""
+          />
+          <div class="px-8 pb-8">
+            <h1 class="service-heading py-auto sm:text-2xl">
+              Frontend Development
+            </h1>
+            <p class="service-text lg:mt-10 xl:mt-4">
+              I am a frontend developer and I provide front-end development
+              services to realize your digital vision because I have a passion
+              for designing aesthetically pleasing and user-friendly websites. I
+              have a firm grasp of Frontend Technologies. Whether you need a
+              website redesign, a new web application I've got you covered.
+            </p>
+          </div>
+        </div>
+        <div
+          class="service-div mdl:py-4 mdl:w-[400px] hover:bg-cardHover sm:w-[35rem] xsm:w-4/5 sm:h-[550px] animate-left"
+        >
+          <img
+            src="/assets/imgs/services/UI design _Outline.svg"
+            class="w-[250px] mx-auto"
+            alt=""
+          />
+          <div class="px-8 pb-8">
+            <h1 class="service-heading sm:text-2xl">
+              Optimizing, Developing & Maintaining web UI
+            </h1>
+            <p class="service-text md:mt-12 xl:mt-4">
+              I can optimize your website to it's highest Performance. I will
+              add extra features on your website and users can navigate your
+              website content easily through user-friendly design, mobile
+              responsiveness, and better accessibility.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services section end -->
+
+    <!-- skills section start -->
+    <section id="skills" class="py-32">
+      <h1 class="section-heading text-center mb-40 sm:text-5xl animate-up">
+        My Skills
+      </h1>
+      <div
+        class="skills-container grid-rows-12 grid-cols-1 sm:grid-rows-6 sm:grid-cols-2 mdl:grid-rows-4 mdl:grid-cols-3 2xl:grid-rows-3 w-11/12 xsm:w-[22rem] sm:w-[38rem] mdl:w-[55rem] 2xl:grid-cols-4 max-w-full xl:w-[70rem] 2xl:w-[92rem]"
+      >
+        <div class="animate-up">
+          <img src="/assets/imgs/tech stacks/html-icon.svg" alt="" />
+          <p>HTML</p>
+        </div>
+        <div class="animate-up">
+          <img src="/assets/imgs/tech stacks/css-icon.svg" alt="" />
+          <p>CSS</p>
+        </div>
+        <div class="animate-up">
+          <img src="/assets/imgs/tech stacks/sass-icon.svg" alt="" />
+          <p>Sass</p>
+        </div>
+        <div class="animate-up">
+          <img src="/assets/imgs/tech stacks/tailwind-css-icon.svg" alt="" />
+          <p>Tailwind CSS</p>
+        </div>
+        <div class="animate-up">
+          <img
+            src="/assets/imgs/tech stacks/bootstrap-5-logo-icon.svg"
+            alt=""
+          />
+          <p>Bootstrap 5</p>
+        </div>
+        <div class="animate-up">
+          <img
+            src="/assets/imgs/tech stacks/javascript-programming-language-icon.svg"
+            alt=""
+          />
+          <p>JavaScript</p>
+        </div>
+        <div class="animate-up">
+          <img src="/assets/imgs/tech stacks/mysql-icon.svg" alt="" />
+          <p>MYSQL</p>
+        </div>
+        <div class="animate-up">
+          <img src="/assets/imgs/tech stacks/svelte-icon.svg" alt="" />
+          <p>Svelte</p>
+        </div>
+        <div class="animate-up">
+          <img src="/assets/imgs/tech stacks/react-js-icon.svg" alt="" />
+          <p>React Js</p>
+        </div>
+
+        <div class="animate-up">
+          <img src="/assets/imgs/tech stacks/redux-icon.svg" alt="" />
+          <p>Redux</p>
+        </div>
+        <div class="animate-up">
+          <img src="/assets/imgs/tech stacks/mongodb-icon.svg" alt="" />
+          <p>MongoDB database</p>
+        </div>
+        <div class="animate-up">
+          <img src="/assets/imgs/tech stacks/node-js-icon.svg" alt="" />
+          <p>Node Js</p>
+        </div>
+      </div>
+    </section>
+    <!-- skills section end -->
+
+    <!-- experience section start -->
+    <section class="w-full h-fit mt-16 py-32 min-h-[1100px]" id="experience">
+      <h1 class="section-heading text-center text-5xl mb-44 animate-up">
+        My Experiences
+      </h1>
+      <div
+        class="max-w-full w-[92rem] flex items-center justify-center h-[1000px] sm:h-[840px] mx-auto"
+      >
+        <div class="experience-container animate-up">
+          <div
+            class="experience-div xsm:w-[350px] xsm:h-[220px] left-1/2 -translate-x-1/2 xl:translate-x-0 top-0 xl:left-0 sm:w-[550px] sm:h-[160px] xl:rounded-r-xl"
+          >
+            <div class="experience-heading xl:text-[22px]">
+              <h1>software Engineer @ YTL</h1>
+              <h2 class="hidden sm:block">2020 - present</h2>
+            </div>
+
+            <p class="experience-para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+              explicabo similique minus vitae corrupti ipsam sapiente, debitis,
+              magnam unde molestias perferendis.
+            </p>
+
+            <div class="w-4/5 experience-design"></div>
+          </div>
+          <div
+            class="experience-div xsm:w-[350px] xsm:h-[220px] top-[250px] sm:top-[220px] right-1/2 translate-x-1/2 xl:translate-x-0 xl:right-0 sm:w-[550px] sm:h-[160px] xl:rounded-l-xl"
+          >
+            <div class="experience-heading xl:text-[22px]">
+              <h1>DevOps engineer @ LLD</h1>
+              <h2 class="hidden sm:block">2018 - 2020</h2>
+            </div>
+
+            <p class="experience-para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              excepturi esse provident ad laboriosam illo ab maiores,
+            </p>
+            <div class="w-4/5 experience-design"></div>
+          </div>
+          <div
+            class="experience-div xsm:w-[350px] xsm:h-[220px] bottom-[250px] sm:bottom-[220px] left-1/2 -translate-x-1/2 xl:translate-x-0 xl:left-0 sm:w-[550px] sm:h-[160px] xl:rounded-r-xl"
+          >
+            <div class="experience-heading xl:text-[22px]">
+              <h1>Top Rated freelancer @ Upwork</h1>
+              <h2 class="hidden sm:block">2017 - present</h2>
+            </div>
+
+            <p class="experience-para">
+              nobis quae dolorum minus ex at soluta perferendis suscipit
+              voluptas, corporis neque eligendi ut nihil id.
+            </p>
+            <div class="w-4/5 experience-design"></div>
+          </div>
+          <div
+            class="experience-div xsm:w-[350px] xsm:h-[220px] bottom-0 right-1/2 translate-x-1/2 xl:translate-x-0 xl:right-0 sm:w-[550px] sm:h-[160px] xl:rounded-l-xl"
+          >
+            <div class="experience-heading xl:text-[22px]">
+              <h1>Frontend Developer</h1>
+              <h2 class="hidden sm:block">2016 - 2017</h2>
+            </div>
+
+            <p class="experience-para">
+              sit amet consectetur adipisicing elit. Asperiores hic accusamus
+              natus ab iure nihil, porro commodi delectus alias maiores aut
+              dolores eligendi .
+            </p>
+            <div class="w-4/5 experience-design"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- experience section end -->
+
+    <!-- portfolio section start -->
+    <section id="portfolio" class="pt-32 mt-10">
+      <h1 class="section-heading text-center sm:text-5xl animate-up">
+        Recent works
+      </h1>
+
+      <div
+        class="portfolio-container 2xl:w-[92rem] xl:w-[70rem] mdl:w-[60rem] sm:w-[600px]"
+      >
+        <div class="portfolio-div mdl:flex-row xl:py-16 2xl:p-20 animate-up">
+          <div class="portfolio-img-container sm:mb-0 mdl:mr-10 2xl:mr-20">
+            <a>
+              <img
+                src="/assets/imgs/projects/Color choosing app.png"
+                class="portfolio-img sm:w-4/5 sm:mx-auto mdl:w-full hover:opacity-50 hover:scale-[1.02]"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="sm:w-4/5 mx-auto mdl:w-full relative sm:mt-12 mdl:mt-0">
+            <h2
+              class="project-div-heading xsm:text-3xl sm:text-4xl mdl:text-2xl xl:text-4xl"
+            >
+              Choose color app
+            </h2>
+            <p
+              class="2xl:text-lg text-base sm:text-lg mdl:text-base font-medium xl:mr-10"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque,
+              velit soluta? Nisi mollitia laborum, labore, sunt recusandae et
+              reprehenderit voluptates illo earum alias molestias, ab sit
+              laudantium magnam neque commodi.
+            </p>
+            <div
+              class="mt-8 xl:mt-16 flex flex-col sm:block mdl:absolute bottom-0"
+            >
+              <a
+                class="portfolio-button xl:text-lg xl:px-8 xl:py-3 sm:text-lg mdl:text-base"
+                >View Live</a
+              >
+              <a
+                class="portfolio-button mt-6 ml-0 sm:ml-8 mdl:text-base xl:text-lg xl:px-8 xl:py-3"
+                >Source Code</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-div mdl:flex-row xl:py-16 2xl:p-20 animate-up">
+          <div class="portfolio-img-container sm:mb-0 mdl:mr-10 2xl:mr-20">
+            <a>
+              <img
+                src="/assets/imgs/projects/Conor landing page.png"
+                class="portfolio-img sm:w-4/5 sm:mx-auto mdl:w-full hover:opacity-50 hover:scale-[1.02]"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="sm:w-4/5 mx-auto mdl:w-full relative sm:mt-12 mdl:mt-0">
+            <h2
+              class="project-div-heading xsm:text-3xl sm:text-4xl mdl:text-2xl xl:text-4xl"
+            >
+              Conor landing Page
+            </h2>
+            <p
+              class="2xl:text-lg text-base sm:text-lg mdl:text-base font-medium xl:mr-10"
+            >
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. A
+              asperiores doloribus aliquam nihil vero et consequatur, officia
+              debitis illum, inventore est veniam voluptatibus animi natus. Esse
+              obcaecati quae quo quaerat!
+              <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+              maxime aspernatur beatae animi delectus vel ab deserunt commodi
+              atque eaque?
+            </p>
+            <div
+              class="mt-8 xl:mt-16 flex flex-col sm:block mdl:absolute bottom-0"
+            >
+              <a
+                class="portfolio-button xl:text-lg xl:px-8 xl:py-3 sm:text-lg mdl:text-base"
+                >View Live</a
+              >
+              <a
+                class="portfolio-button mt-6 ml-0 sm:ml-8 mdl:text-base xl:text-lg xl:px-8 xl:py-3"
+                >Source Code</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-div mdl:flex-row xl:py-16 2xl:p-20 animate-up">
+          <div class="portfolio-img-container sm:mb-0 mdl:mr-10 2xl:mr-20">
+            <a>
+              <img
+                src="/assets/imgs/projects/tv show search app.png"
+                class="portfolio-img sm:w-4/5 sm:mx-auto mdl:w-full hover:opacity-50 hover:scale-[1.02]"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="sm:w-4/5 mx-auto mdl:w-full relative sm:mt-12 mdl:mt-0">
+            <h2
+              class="project-div-heading xsm:text-3xl sm:text-4xl mdl:text-2xl xl:text-4xl"
+            >
+              TV show search
+            </h2>
+            <p
+              class="2xl:text-lg text-base sm:text-lg mdl:text-base font-medium xl:mr-10"
+            >
+              amet consectetur adipisicing elit. Perspiciatis aliquid odio illo
+              hic ducimus doloremque facilis laboriosam ab vitae mollitia. Culpa
+              quaerat et vel vero fugiat earum minima molestiae quibusdam?
+              <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              debitis quod distinctio aliquam incidunt necessitatibus, quo nihil
+              neque ut quis architecto voluptas voluptate alias delectus,
+              mollitia in aliquid minus expedita!
+            </p>
+            <div
+              class="mt-8 xl:mt-16 flex flex-col sm:block mdl:absolute bottom-0"
+            >
+              <a
+                class="portfolio-button xl:text-lg xl:px-8 xl:py-3 sm:text-lg mdl:text-base"
+                >View Live</a
+              >
+              <a
+                class="portfolio-button mt-6 ml-0 sm:ml-8 mdl:text-base xl:text-lg xl:px-8 xl:py-3"
+                >Source Code</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio section end -->
+
+    <!-- testimonials section start -->
+    <section id="testimonial" class="mt-16 py-32 animate-up">
+      <h1 class="section-heading text-center sm:text-5xl">
+        What my Client says
+      </h1>
+      <div
+        class="max-w-full mx-auto w-4/5 xsm:w-[380px] sm:w-[35rem] mdl:w-[50rem] xl:w-[60rem] relative swiper"
+      >
+        <div class="swiper-wrapper">
+          <div class="testimonial-card swiper-slide">
+            <div class="">
+              <img src="assets/imgs/profiles/ali morshed.png" alt="" />
+            </div>
+            <div>
+              <p class="relative">
+                <i
+                  class="fa-solid fa-quote-left absolute text-2xl -top-10 -left-10"
+                ></i
+                >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste
+                saepe magnam eius ab at placeat praesentium eum illo alias,
+                labore obcaecati reprehenderit nihil exercitationem quasi natus
+                eveniet delectus iusto voluptate?<i
+                  class="fa-solid fa-quote-right absolute text-2xl -bottom-10 -right-10"
+                ></i>
+              </p>
+
+              <h1 class="font-Opensans font-bold text-2xl mt-16">
+                Ali Morshed
+              </h1>
+              <h2 class="my-1 text-lg">Ceo, Softonik</h2>
+            </div>
+          </div>
+          <div class="testimonial-card swiper-slide">
+            <div class="">
+              <img
+                src="assets/imgs/profiles/charlie sharp.png"
+                class=""
+                alt=""
+              />
+            </div>
+            <div>
+              <p class="relative">
+                <i
+                  class="fa-solid fa-quote-left absolute text-2xl -top-10 -left-10"
+                ></i>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                saepe magnam eius ab at placeat praesentium eum illo alias,
+                labore obcaecati reprehenderit nihil exercitationem quasi natus
+                eveniet delectus iusto voluptate?<i
+                  class="fa-solid fa-quote-right absolute text-2xl -bottom-10 -right-10"
+                ></i>
+              </p>
+
+              <h1 class="font-Opensans font-bold text-2xl mt-16">
+                Charlie Sharp
+              </h1>
+              <h2 class="my-1 text-lg">Editor, Voicemall</h2>
+            </div>
+          </div>
+          <div class="testimonial-card swiper-slide">
+            <div class="">
+              <img
+                src="assets/imgs/profiles/lowey manson.png"
+                class=""
+                alt=""
+              />
+            </div>
+            <div>
+              <p class="relative">
+                <i
+                  class="fa-solid fa-quote-left absolute text-2xl -top-10 -left-10"
+                ></i
+                >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste
+                saepe magnam eius ab at placeat praesentium eum illo alias,
+                labore obcaecati reprehenderit nihil exercitationem quasi natus
+                eveniet delectus iusto voluptate?<i
+                  class="fa-solid fa-quote-right absolute text-2xl -bottom-10 -right-10"
+                ></i>
+              </p>
+
+              <h1 class="font-Opensans font-bold text-2xl mt-16">
+                Lowey Manson
+              </h1>
+              <h2 class="my-1 text-lg">Senior Dev, Atron soft.</h2>
+            </div>
+          </div>
+        </div>
+        <div
+          class="arrows absolute bottom-8 space-x-10 left-1/2 -translate-x-1/2 z-50 hidden xsm:block"
+        >
+          <i class="fa-solid fa-arrow-left button-prev hover:bg-cardHover"></i>
+          <i class="fa-solid fa-arrow-right button-next hover:bg-cardHover"></i>
+        </div>
+      </div>
+    </section>
+    <!-- testimonial section end -->
+
+    <!-- blog section start -->
+    <section class="blog py-32 mt-10" id="blog">
+      <h1 class="section-heading text-center sm:text-5xl animate-up">
+        My latest Blogs
+      </h1>
+      <div
+        class="blog-container xl:flex-row max-w-full xl:w-[70rem] 2xl:w-[92rem] xl:space-y-0"
+      >
+        <div
+          class="blog-div sm:w-[600px] xl:w-[350px] xl:h-[330px] 2xl:w-[450px] 2xl:h-[420px] animate-left"
+        >
+          <a class="cursor-pointer">
+            <img
+              src="/assets/imgs/blog/coding tips and tricks.png"
+              class="rounded-t-2xl"
+              alt=""
+            />
+
+            <div class="p-3 2xl:p-5">
+              <h1 class="blog-heading sm:text-2xl xl:text-lg 2xl:text-[24px]">
+                Coding: tips and tricks to write the best code
+              </h1>
+              <a
+                class="px-6 cursor-pointer border-2 transition-all duration-300 border-green-500 hover:bg-card py-3 text-md 2xl:text-lg font-semibold rounded-lg bg-green-500"
+                >Read <i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </a>
+        </div>
+        <div
+          class="blog-div sm:w-[600px] xl:w-[350px] xl:h-[330px] 2xl:w-[450px] 2xl:h-[420px] animate-left"
+        >
+          <a class="cursor-pointer">
+            <img
+              src="/assets/imgs/blog/pett's startup.png"
+              class="rounded-t-2xl"
+              alt=""
+            />
+            <div class="p-3 2xl:p-5">
+              <h1
+                class="blog-heading text-lg sm:text-2xl xl:text-lg 2xl:text-[24px]"
+              >
+                Startup ethics: the myths and to relieve from sinking
+              </h1>
+              <a
+                class="px-6 border-2 cursor-pointer transition-all duration-300 border-green-500 hover:bg-card py-3 text-md 2xl:text-lg font-semibold rounded-lg bg-green-500"
+                >Read <i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </a>
+        </div>
+
+        <div
+          class="blog-div sm:w-[600px] xl:w-[350px] xl:h-[330px] 2xl:w-[450px] 2xl:h-[420px] animate-left"
+        >
+          <a class="cursor-pointer">
+            <img
+              src="/assets/imgs/blog/what's going on the web.png"
+              class="rounded-t-2xl"
+              alt=""
+            />
+            <div class="p-3 2xl:p-5">
+              <h1 class="blog-heading sm:text-2xl xl:text-lg 2xl:text-[24px]">
+                analysis: what is going on the web of internet
+              </h1>
+              <a
+                class="px-6 cursor-pointer border-2 transition-all duration-300 border-green-500 hover:bg-card py-3 text-md 2xl:text-lg font-semibold rounded-lg bg-green-500"
+                >Read <i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- blog section end -->
+
+    <!-- contact section start -->
+    <section id="contact" class="py-32">
+      <h1 class="section-heading text-center mb-32 sm:text-5xl animate-up">
+        Contact me
+      </h1>
+      <div
+        class="flex max-w-full flex-col xl:flex-row items-center justify-around xl:w-[80rem] 2xl:w-[92rem] mx-auto"
+      >
+        <div
+          class="flex flex-col items-center w-4/5 xsm:w-[25rem] sm:w-fit animate-up"
+        >
+          <div
+            class="flex items-center xsm:bg-card p-2 xsm:px-6 xsm:py-5 rounded-xl w-11/12 xsm:min-w[375px] sm:min-w-[500px] mb-10 xl:min-w-[365px] xl:w-fit"
+          >
+            <div class="px-4 py-5 rounded-full bg-cardHover mr-3">
+              <img
+                src="/assets/imgs/call.svg"
+                class="min-w-[15px] w-[20px] xsm:w-[40px]"
+                alt=""
+              />
+            </div>
+
+            <div>
+              <h1 class="font-Poppins text-base xsm:text-xl font-semibold">
+                Call me
+              </h1>
+              <a
+                class="font-Opensans font-semibold text-button text-sm xsm:text-lg cursor-pointer"
+                >+123 123456789</a
+              >
+            </div>
+          </div>
+          <div
+            class="flex items-center xsm:bg-card p-2 xsm:px-6 xsm:py-5 rounded-xl w-11/12 xsm:min-w[375px] sm:min-w-[500px] mb-10 xl:min-w-[375px] xl:w-fit"
+          >
+            <div class="px-4 py-5 rounded-full bg-cardHover mr-3">
+              <img
+                src="/assets/imgs/mail.svg"
+                class="min-w-[15px] w-[20px] xsm:w-[40px]"
+                alt=""
+              />
+            </div>
+
+            <div>
+              <h1 class="font-Poppins text-base xsm:text-xl font-semibold">
+                Mail me at
+              </h1>
+              <a
+                class="font-Opensans font-semibold text-button text-sm xsm:text-lg cursor-pointer"
+                >example@example.com</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h1 class="text-2xl font-bold block mb-10 xl:hidden">OR</h1>
+        </div>
+
+        <form
+          class="bg-card p-8 md:p-12 rounded-2xl space-y-8 w-11/12 md:w-fit md:min-w-[715px] animate-up"
+        >
+          <h1 class="text-xl sm:text-3xl font-Poppins font-semibold">
+            Send me a message
+          </h1>
+          <div class="flex justify-between flex-col md:flex-row">
+            <input
+              type="text"
+              name="name"
+              id="contact-name"
+              placeholder="Name"
+              class="bg-inherit px-4 text-lg py-3 w-full mb-8 md:mb-0 md:w-[48%] focus:border-green-400 border border-transparent mr-auto outline-none bg-[#032135] rounded-xl"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+              id="contact-email"
+              class="bg-inherit px-4 text-lg py-3 w-full md:w-[48%] outline-none focus:border-green-400 border border-transparent bg-[#032135] rounded-xl"
+            />
+          </div>
+          <textarea
+            name="message"
+            id="contact-message"
+            class="w-full h-[200px] border border-transparent outline-none focus:border-green-400 rounded-2xl text-lg bg-[#032135] p-4"
+            placeholder="Message"
+            style="resize: none"
+            required
+            name="message"
+          ></textarea>
+          <button
+            class="bg-button text-background px-10 mx-auto py-3 font-Poppins transition-all duration-200 font-semibold text-lg rounded-xl border border-button hover:bg-card hover:text-white"
+            onclick=""
+            type="submit"
+          >
+            Send
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <input type="hidden" name="_captcha" value="false" />
+        </form>
+      </div>
+    </section>
+    <section id="footer" class="mb-16">
+      <div class="text-center">
+        <a class="cursor-pointer">
+          <i
+            class="lni lni-twitter-original social-link hover:bg-green-400 hover:text-white hover:-translate-y-2 xsm:mx-4"
+          ></i>
+        </a>
+
+        <a class="cursor-pointer">
+          <i
+            class="lni lni-linkedin-original social-link hover:bg-green-400 hover:text-white hover:-translate-y-2 xsm:mx-4"
+          ></i>
+        </a>
+        <a class="cursor-pointer">
+          <i
+            class="lni lni-dribbble social-link hover:bg-green-400 hover:text-white hover:-translate-y-2 xsm:mx-4"
+          ></i>
+        </a>
+        <a class="cursor-pointer">
+          <i
+            class="lni lni-facebook-original social-link hover:bg-green-400 hover:text-white hover:-translate-y-2 xsm:mx-4"
+          ></i>
+        </a>
+        <a class="cursor-pointer">
+          <i
+            class="lni lni-behance-original social-link hover:bg-green-400 hover:text-white hover:-translate-y-2 xsm:mx-4"
+          ></i>
+        </a>
+      </div>
+    </section>
+    <section
+      class="w-full h-[50px] flex items-center justify-center bg-black"
+      id="footer"
+    >
+      <h1 class="text-center text-lg text-white font-Opensans font-light">
+        © 2023 Folio. Design by
+        <a
+          href="https://twitter.com/adnansdev"
+          target="_blank"
+          class="underline hover:text-button transition-all duration-200"
+          >Adnan Saim</a
+        >
+      </h1>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script
+      src="https://kit.fontawesome.com/f99514d96b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/typed-text.js"></script>
+  </body>
+</html>

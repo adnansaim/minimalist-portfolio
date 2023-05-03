@@ -1,0 +1,4 @@
+This app is designed to help you choose the perfect color for your
+              next project. Whether you're designing a website, creating a
+              presentation, or working on a piece of art, this app will help you
+              find the color you need.
